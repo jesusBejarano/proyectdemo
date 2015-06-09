@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @pedido.local %>
+</p>
+
+<p>
+  <strong>Periodo:</strong>
+  <%= @pedido.periodo %>
+</p>
+
+<p>
+  <strong>Dia:</strong>
+  <%= @pedido.dia %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @pedido.user %>
+</p>
+
+<p>
+  <strong>Cantidadpagar:</strong>
+  <%= @pedido.CantidadPagar %>
+</p>
+
+<p>
+  <strong>Direcciones:</strong>
+  <%= @pedido.direcciones %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @pedido.estado %>
+</p>
+
+<%= link_to 'Edit', edit_pedido_path(@pedido) %> |
+<%= link_to 'Back', pedidos_path %>

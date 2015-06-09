@@ -1,0 +1,13 @@
+<%= simple_form_for(@ubigeo) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :departamento, label_method: :nombre, value_method: :id %>
+    <%= f.association :provincia, label_method: :nombre, value_method: :id %>
+    <%= f.association :distrito, label_method: :nombre, value_method: :id  %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

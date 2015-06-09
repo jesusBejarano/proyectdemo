@@ -1,0 +1,29 @@
+<h1>Listing ubigeos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Departamento</th>
+      <th>Provincia</th>
+      <th>Distrito</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ubigeos.each do |ubigeo| %>
+      <tr>
+        <td><%= ubigeo.departamento %></td>
+        <td><%= ubigeo.provincia %></td>
+        <td><%= ubigeo.distrito %></td>
+        <td><%= link_to 'Show', ubigeo %></td>
+        <td><%= link_to 'Edit', edit_ubigeo_path(ubigeo) %></td>
+        <td><%= link_to 'Destroy', ubigeo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ubigeo', new_ubigeo_path %>

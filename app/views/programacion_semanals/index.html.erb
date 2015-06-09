@@ -1,0 +1,35 @@
+<h1>Listing programacion_semanals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Local</th>
+      <th>Periodo</th>
+      <th>Dia</th>
+      <th>Plato</th>
+      <th>Stock</th>
+      <th>Tipomenu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @programacion_semanals.each do |programacion_semanal| %>
+      <tr>
+        <td><%= programacion_semanal.local %></td>
+        <td><%= programacion_semanal.periodo %></td>
+        <td><%= programacion_semanal.dia %></td>
+        <td><%= programacion_semanal.plato %></td>
+        <td><%= programacion_semanal.stock %></td>
+        <td><%= programacion_semanal.TipoMenu %></td>
+        <td><%= link_to 'Show', programacion_semanal %></td>
+        <td><%= link_to 'Edit', edit_programacion_semanal_path(programacion_semanal) %></td>
+        <td><%= link_to 'Destroy', programacion_semanal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Programacion semanal', new_programacion_semanal_path %>

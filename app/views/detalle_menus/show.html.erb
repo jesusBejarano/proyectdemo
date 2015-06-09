@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Detallepedido:</strong>
+  <%= @detalle_menu.DetallePedido %>
+</p>
+
+<p>
+  <strong>Plato:</strong>
+  <%= @detalle_menu.plato %>
+</p>
+
+<p>
+  <strong>Tipomenu:</strong>
+  <%= @detalle_menu.TipoMenu %>
+</p>
+
+<%= link_to 'Edit', edit_detalle_menu_path(@detalle_menu) %> |
+<%= link_to 'Back', detalle_menus_path %>

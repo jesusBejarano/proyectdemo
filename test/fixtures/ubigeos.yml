@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: ubigeos
+#
+#  id              :integer          not null, primary key
+#  departamento_id :integer
+#  provincia_id    :integer
+#  distrito_id     :integer
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  departamento_id: 
+  provincia_id: 
+  distrito_id: 
+
+two:
+  departamento_id: 
+  provincia_id: 
+  distrito_id: 

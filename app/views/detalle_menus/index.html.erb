@@ -1,0 +1,29 @@
+<h1>Listing detalle_menus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Detallepedido</th>
+      <th>Plato</th>
+      <th>Tipomenu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @detalle_menus.each do |detalle_menu| %>
+      <tr>
+        <td><%= detalle_menu.DetallePedido %></td>
+        <td><%= detalle_menu.plato %></td>
+        <td><%= detalle_menu.TipoMenu %></td>
+        <td><%= link_to 'Show', detalle_menu %></td>
+        <td><%= link_to 'Edit', edit_detalle_menu_path(detalle_menu) %></td>
+        <td><%= link_to 'Destroy', detalle_menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Detalle menu', new_detalle_menu_path %>

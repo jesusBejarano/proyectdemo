@@ -1,0 +1,16 @@
+<%= simple_form_for(@programacion_semanal) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :local %>
+    <%= f.association :periodo %>
+    <%= f.input :dia %>
+    <%= f.association :plato %>
+    <%= f.input :stock %>
+    <%= f.association :TipoMenu %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

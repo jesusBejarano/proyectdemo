@@ -1,0 +1,2 @@
+module TipoPlatosHelper
+end

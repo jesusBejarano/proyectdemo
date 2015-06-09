@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @tipo_menu.nombre %>
+</p>
+
+<p>
+  <strong>Preciofijo:</strong>
+  <%= @tipo_menu.PrecioFijo %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @tipo_menu.precio %>
+</p>
+
+<%= link_to 'Edit', edit_tipo_menu_path(@tipo_menu) %> |
+<%= link_to 'Back', tipo_menus_path %>

@@ -1,0 +1,29 @@
+<h1>Listing direcciones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Nombre</th>
+      <th>Ubigeo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @direcciones.each do |direccione| %>
+      <tr>
+        <td><%= direccione.user %></td>
+        <td><%= direccione.nombre %></td>
+        <td><%= direccione.ubigeo %></td>
+        <td><%= link_to 'Show', direccione %></td>
+        <td><%= link_to 'Edit', edit_direccione_path(direccione) %></td>
+        <td><%= link_to 'Destroy', direccione, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Direccione', new_direccione_path %>

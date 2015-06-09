@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: tipo_menus
+#
+#  id         :integer          not null, primary key
+#  nombre     :string(255)
+#  PrecioFijo :boolean
+#  precio     :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  PrecioFijo: false
+  precio: 9.99
+
+two:
+  nombre: MyString
+  PrecioFijo: false
+  precio: 9.99

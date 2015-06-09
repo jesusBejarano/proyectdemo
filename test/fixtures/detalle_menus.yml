@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: detalle_menus
+#
+#  id               :integer          not null, primary key
+#  DetallePedido_id :integer
+#  plato_id         :integer
+#  TipoMenu_id      :integer
+#  created_at       :datetime
+#  updated_at       :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DetallePedido_id: 
+  plato_id: 
+  TipoMenu_id: 
+
+two:
+  DetallePedido_id: 
+  plato_id: 
+  TipoMenu_id: 

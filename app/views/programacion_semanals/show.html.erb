@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @programacion_semanal.local %>
+</p>
+
+<p>
+  <strong>Periodo:</strong>
+  <%= @programacion_semanal.periodo %>
+</p>
+
+<p>
+  <strong>Dia:</strong>
+  <%= @programacion_semanal.dia %>
+</p>
+
+<p>
+  <strong>Plato:</strong>
+  <%= @programacion_semanal.plato %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @programacion_semanal.stock %>
+</p>
+
+<p>
+  <strong>Tipomenu:</strong>
+  <%= @programacion_semanal.TipoMenu %>
+</p>
+
+<%= link_to 'Edit', edit_programacion_semanal_path(@programacion_semanal) %> |
+<%= link_to 'Back', programacion_semanals_path %>

@@ -1,0 +1,17 @@
+<%= simple_form_for(@pedido) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :local %>
+    <%= f.association :periodo %>
+    <%= f.input :dia %>
+    <%= f.association :user %>
+    <%= f.input :CantidadPagar %>
+    <%= f.association :direcciones %>
+    <%= f.association :estado %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

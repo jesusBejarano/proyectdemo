@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: detalle_pedidos
+#
+#  id             :integer          not null, primary key
+#  pedido_id      :integer
+#  NombreProducto :string(255)
+#  cantidad       :integer
+#  PrecioParcial  :integer
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pedido_id: 
+  NombreProducto: MyString
+  cantidad: 1
+  PrecioParcial: 9.99
+
+two:
+  pedido_id: 
+  NombreProducto: MyString
+  cantidad: 1
+  PrecioParcial: 9.99

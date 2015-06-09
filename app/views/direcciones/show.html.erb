@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @direccione.user %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @direccione.nombre %>
+</p>
+
+<p>
+  <strong>Ubigeo:</strong>
+  <%= @direccione.ubigeo %>
+</p>
+
+<%= link_to 'Edit', edit_direccione_path(@direccione) %> |
+<%= link_to 'Back', direcciones_path %>

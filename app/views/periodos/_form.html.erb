@@ -1,0 +1,13 @@
+<%= simple_form_for(@periodo) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :nombre %>
+    <%= f.input :FechaInicial %>
+    <%= f.input :FechaFinal %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

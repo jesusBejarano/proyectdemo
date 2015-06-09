@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: pedidos
+#
+#  id             :integer          not null, primary key
+#  local_id       :integer
+#  periodo_id     :integer
+#  dia            :date
+#  user_id        :integer
+#  CantidadPagar  :integer
+#  direcciones_id :integer
+#  estado_id      :integer
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  local_id: 
+  periodo_id: 
+  dia: 2015-06-07
+  user_id: 
+  CantidadPagar: 9.99
+  direcciones_id: 
+  estado_id: 
+
+two:
+  local_id: 
+  periodo_id: 
+  dia: 2015-06-07
+  user_id: 
+  CantidadPagar: 9.99
+  direcciones_id: 
+  estado_id: 
